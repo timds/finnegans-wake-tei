@@ -44,13 +44,49 @@
         <rendition xml:id="_small">font-size: 0.8em</rendition>
         <rendition xml:id="_sub">vertical-align: sub</rendition>
         <rendition xml:id="_sup">vertical-align: super</rendition>
-        <rendition xml:id="_c10-F-style">font-size: 0.8em</rendition>
-        <rendition xml:id="_c10-L-style">font-style: italic</rendition>
-        <rendition xml:id="_c10-R-style">font-size: 0.8em</rendition>
         <rendition xml:id="_rotated90">transform: rotate(90deg);</rendition>
         <rendition xml:id="_rotated180">transform: rotate(180deg);</rendition>
         <rendition xml:id="_rotatedNeg90">transform: rotate(-90deg);</rendition>
         <rendition xml:id="_reflected">transform: scale(-1, 1);</rendition>
+
+	<rendition xml:id="PageC10">
+	  .PageC10 {
+	  display: grid;
+	  grid-template-columns: 7em 22.5em 7em;
+	  grid-template-rows: 0.8fr 0.2fr;
+	  grid-template-areas:
+	  "l c r"
+	  "f f f"
+	  }
+	</rendition>
+	<rendition xml:id="PageC10CentreColumn">
+	  .PageC10CentreColumn {
+	  grid-area: c;
+	  }
+	</rendition>
+	<rendition xml:id="PageC10Footnotes">
+	  .PageC10Footnotes {
+	  grid-area: f;
+	  font-size: 0.9em;
+	  margin-top: 1em;
+	  margin-left: 3em;
+	  margin-right: 3em;
+	  }
+	</rendition>
+        <rendition xml:id="PageC10LeftColumn">
+	  .PageC10LeftColumn {
+	  grid-area: l;
+	  font-style: italic;
+	  font-size: 0.9em;
+	  }
+	</rendition>
+        <rendition xml:id="PageC10RightColumn">
+	  .PageC10RightColumn {
+	  grid-area: r;
+	  font-variant: small-caps;
+	  font-size: 0.9em;
+	  }
+	</rendition>
       </tagsDecl>
    </teiHeader>
    <text>
@@ -1894,7 +1930,7 @@
                   <l xml:id="_1.2.44.22">                                       {<hi rendition="#i">Ardite, arditi!</hi>
                   </l>
                   <l xml:id="_1.2.44.23">                                       {Music cue.</l>
-                  <l xml:id="_1.2.44.24">                     "T<hi rendition="#small">HE</hi> B<hi rendition="#small">ALLAD</hi> 
+                  <l xml:id="_1.2.44.24">                     "T<hi rendition="#small">HE</hi> B<hi rendition="#small">ALLAD</hi>
                      <hi rendition="#small">OF</hi> P<hi rendition="#small">ERSSE</hi> O'R<hi rendition="#small">EILLY</hi>."</l>
                   <l xml:id="_1.2.44.25">
                      <notatedMusic>
@@ -11307,8 +11343,8 @@ sometext</div>
                </div>
             </div>
             <div type="chapter" n="2">
-               <div type="page" subtype="C10" n="260">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="260">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.260.01">     As we there are where are we are we there</l>
                      <l xml:id="_2.2.260.02">from tomtittot to teetootomtotalitarian. Tea</l>
                      <l xml:id="_2.2.260.03">tea too oo.</l>
@@ -11336,7 +11372,7 @@ sometext</div>
                            <hi rendition="#small">3</hi>
                         </hi> in her rougey</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.260.F01">     <hi rendition="#sup">1</hi> Rawmeash, quoshe with her girlic teangue. If old Herod with the Corm-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.260.F02">well's eczema was to go for me like he does Snuffler whatever about his blue</l>
@@ -11346,7 +11382,7 @@ sometext</div>
                      <l xml:id="_2.2.260.F06">     <hi rendition="#sup">3</hi> Real life behind the floodlights as shown by the best exponents of a royal</l>
                      <l xml:id="_2.2.260.F07">divorce.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.260.L.1" corresp="#_2.2.260.04">
                         <l xml:id="_2.2.260.L01">With his broad</l>
                         <l xml:id="_2.2.260.L02">and hairy face,</l>
@@ -11364,7 +11400,7 @@ sometext</div>
                         <l xml:id="_2.2.260.L10">out).</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.260.R.1" corresp="#_2.2.260.01">
                         <l xml:id="_2.2.260.R01">UNDE ET UBI.</l>
                      </ab>
@@ -11381,8 +11417,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="261">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="261">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.261.01">gipsylike chinkaminx pulshandjupeyjade and</l>
                      <l xml:id="_2.2.261.02">her petsybluse indecked o' voylets.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
@@ -11427,7 +11463,7 @@ sometext</div>
                         </hi> How</l>
                      <l xml:id="_2.2.261.31">is he? And what the decans is there about him</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.261.F01">     <hi rendition="#sup">1</hi> When we play dress grownup at alla ludo poker you'll be happnessised</l>
                      <l xml:id="_2.2.261.F02">to feel how fetching I can look in clingarounds.</l>
                      <l xml:id="_2.2.261.F03">     <hi rendition="#sup">2</hi> Kellywick, Longfellow's Lodgings, House of Comments III, Cake Walk,</l>
@@ -11435,7 +11471,7 @@ sometext</div>
                      <l xml:id="_2.2.261.F05">     <hi rendition="#sup">3</hi> Groupname for grapejuice.</l>
                      <l xml:id="_2.2.261.F06">     <hi rendition="#sup">4</hi> Bhing, said her burglar's head, soto poce.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.261.L.1" corresp="#_2.2.261.13">
                         <l xml:id="_2.2.261.L01">Swiney Tod, ye</l>
                         <l xml:id="_2.2.261.L02">Daimon Barbar!</l>
@@ -11452,7 +11488,7 @@ sometext</div>
                         <l xml:id="_2.2.261.L08">convulsion box.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.261.R.1" corresp="#_2.2.261.23">
                         <l xml:id="_2.2.261.R01">CONSTITU-</l>
                         <lb break="no"/>
@@ -11466,8 +11502,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="262">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="262">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.262.01">anyway, the decemt man? Easy, calm your</l>
                      <l xml:id="_2.2.262.02">haste! Approach to lead our passage!</l>
                      <l xml:id="_2.2.262.03">This bridge is upper.</l>
@@ -11520,7 +11556,7 @@ sometext</div>
                      <l xml:id="_2.2.262.28">The bibbers drang the den. The papplicom,</l>
                      <l xml:id="_2.2.262.29">the pubblicam he's turning tin for ten. From</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.262.F01">     <hi rendition="#sup">1</hi> Yussive smirte and ye mermon answerth from his beelyingplace below</l>
                      <l xml:id="_2.2.262.F02">the tightmark, Gotahelv!</l>
                      <l xml:id="_2.2.262.F03">     <hi rendition="#sup">2</hi> O Evol, kool in the salg and ees how Dozi pits what a drows er.</l>
@@ -11531,7 +11567,7 @@ sometext</div>
                      <l xml:id="_2.2.262.F08">     <hi rendition="#sup">7</hi> Begge. To go to Begge. To go to Begge and to be sure to reminder</l>
                      <l xml:id="_2.2.262.F09">Begge. Goodbeg, buggey Begge.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.262.L.1" corresp="#_2.2.262.11">
                         <l xml:id="_2.2.262.L01">Swing the banjo,</l>
                         <l xml:id="_2.2.262.L02">bantams, bounce-</l>
@@ -11556,7 +11592,7 @@ sometext</div>
                         <l xml:id="_2.2.262.L14">Raffle.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.262.R.1" corresp="#_2.2.262.03">
                         <l xml:id="_2.2.262.R01">PROBA-</l>
                         <lb break="no"/>
@@ -11581,8 +11617,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="263">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="263">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.263.01">seldomers that most frequent him. That same</l>
                      <l xml:id="_2.2.263.02">erst crafty hakemouth which under the assumed</l>
                      <l xml:id="_2.2.263.03">name of Ignotus Loquor, of foggy old,</l>
@@ -11627,12 +11663,12 @@ sometext</div>
                      <l xml:id="_2.2.263.27">less reason to believe, original sun. Securely</l>
                      <l xml:id="_2.2.263.28">judges orb terrestrial.<hi rendition="#sup">
                            <hi rendition="#small">4</hi>
-                        </hi> 
+                        </hi>
                         <hi rendition="#i">Haud certo ergo.</hi> But</l>
                      <l xml:id="_2.2.263.29">O felicitous culpability, sweet bad cess to you</l>
                      <l xml:id="_2.2.263.30">for an archetypt!</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.263.F01">     <hi rendition="#sup">1</hi> Huntler and Pumar's animal alphabites, the first in the world from</l>
                      <l xml:id="_2.2.263.F02">aab to zoo.</l>
                      <l xml:id="_2.2.263.F03">     <hi rendition="#sup">2</hi> We dont hear the booming cursowarries, we wont fear the fletches of</l>
@@ -11642,7 +11678,7 @@ sometext</div>
                      <l xml:id="_2.2.263.F07">     <hi rendition="#sup">4</hi> And he was a gay Lutharius anyway, Sinobiled. You can tell by their</l>
                      <l xml:id="_2.2.263.F08">extraordinary clothes.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.263.L.1" corresp="#_2.2.263.07">
                         <l xml:id="_2.2.263.L01">Mars speaking.</l>
                      </ab>
@@ -11659,8 +11695,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="264">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="264">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.264.01">     Honour commercio's energy yet aid the</l>
                      <l xml:id="_2.2.264.02">linkless proud, the plurable with everybody</l>
                      <l xml:id="_2.2.264.03">and ech with pal, this ernst of Allsap's ale</l>
@@ -11702,14 +11738,14 @@ sometext</div>
                            <hi rendition="#small">3</hi>
                         </hi> with our king's house</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.264.F01">     <hi rendition="#sup">1</hi> Startnaked and bonedstiff. We vivvy soddy. All be dood.</l>
                      <l xml:id="_2.2.264.F02">     <hi rendition="#sup">2</hi> When you dreamt that you'd wealth in marble arch do you ever think of</l>
                      <l xml:id="_2.2.264.F03">pool beg slowe.</l>
                      <l xml:id="_2.2.264.F04">     <hi rendition="#sup">3</hi> Porphyrious Olbion, redcoatliar, we were always wholly rose marines</l>
                      <l xml:id="_2.2.264.F05">on our side every time.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.264.L.1" corresp="#_2.2.264.13">
                         <l xml:id="_2.2.264.L01">Bags.</l>
                         <l xml:id="_2.2.264.L02">Balls.</l>
@@ -11721,7 +11757,7 @@ sometext</div>
                         <l xml:id="_2.2.264.L06">Muckinurney!</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.264.R.1" corresp="#_2.2.264.01">
                         <l xml:id="_2.2.264.R01">ARCHAIC</l>
                         <l xml:id="_2.2.264.R02">ZELOTYPIA</l>
@@ -11745,8 +11781,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="265">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="265">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.265.01">of stone, belgroved of mulbrey, the still that</l>
                      <l xml:id="_2.2.265.02">was mill and Kloster that was Yeomansland,</l>
                      <l xml:id="_2.2.265.03">the ghastcold tombshape of the quick fore-</l>
@@ -11794,7 +11830,7 @@ sometext</div>
                      <l xml:id="_2.2.265.28">a Finntown's generous poet's office. Distorted</l>
                      <l xml:id="_2.2.265.29">mirage, aloofliest of the plain, wherein the</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.265.F01">     <hi rendition="#sup">1</hi> Now a muss wash the little face.</l>
                      <l xml:id="_2.2.265.F02">     <hi rendition="#sup">2</hi> A viking vernacular expression still used in the Summerhill district for a</l>
                      <l xml:id="_2.2.265.F03">jerryhatted man of forty who puts two fingers into his boiling soupplate and</l>
@@ -11805,7 +11841,7 @@ sometext</div>
                      <l xml:id="_2.2.265.F08">     <hi rendition="#sup">5</hi> Tomley. The grown man. A butcher szewched him the bloughs and</l>
                      <l xml:id="_2.2.265.F09">braches. I'm chory to see P. Shuter.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.265.L.1" corresp="#_2.2.265.15">
                         <l xml:id="_2.2.265.L01">In snowdrop,</l>
                         <l xml:id="_2.2.265.L02">trou-de-dentelle,</l>
@@ -11820,8 +11856,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="266">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="266">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.266.01">boxomeness of the bedelias<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> makes hobby-</l>
@@ -11868,7 +11904,7 @@ sometext</div>
                      <lb break="no"/>
                      <l xml:id="_2.2.266.31">scionable, flickerflapper fore our unter-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.266.F01">     <hi rendition="#sup">1</hi> I believe in Dublin and the Sultan of Turkey.</l>
                      <l xml:id="_2.2.266.F02">     <hi rendition="#sup">2</hi> I have heard this word used by Martin Halpin, an old gardener from the</l>
                      <l xml:id="_2.2.266.F03">Glens of Antrim who used to do odd jobs for my godfather, the Rev. B. B.</l>
@@ -11876,7 +11912,7 @@ sometext</div>
                      <l xml:id="_2.2.266.F05">     <hi rendition="#sup">3</hi> Ravens may rive so can dove deelish.</l>
                      <l xml:id="_2.2.266.F06">     <hi rendition="#sup">4</hi> A question of pull.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.266.L.1" corresp="#_2.2.266.20">
                         <l xml:id="_2.2.266.L01">Bet you fippence,</l>
                         <l xml:id="_2.2.266.L02">anythesious,</l>
@@ -11886,7 +11922,7 @@ sometext</div>
                         <l xml:id="_2.2.266.L05">game?</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.266.L.2" corresp="#_2.2.266.20">
                         <l xml:id="_2.2.266.R01">PREAUSTERIC</l>
                         <l xml:id="_2.2.266.R02">MAN AND HIS</l>
@@ -11898,8 +11934,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="267">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="267">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.267.01">drugged,<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> lead us seek, lote us see, light us find,</l>
@@ -11947,7 +11983,7 @@ sometext</div>
                      <l xml:id="_2.2.267.28">myrrh and rambler roses mistmusk while still</l>
                      <l xml:id="_2.2.267.29">the maybe mantles the meiblume or ever her</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.267.F01">     <hi rendition="#sup">1</hi> For Rose Point see Inishmacsaint.</l>
                      <l xml:id="_2.2.267.F02">     <hi rendition="#sup">2</hi> Mannequins' Pose.</l>
                      <l xml:id="_2.2.267.F03">     <hi rendition="#sup">3</hi> Their holy presumption and hers sinfly desprit.</l>
@@ -11957,7 +11993,7 @@ sometext</div>
                      <l xml:id="_2.2.267.F07">     <hi rendition="#sup">6</hi> All abunk for Tarararat! Look slipper, soppyhat, we've a doss in the</l>
                      <l xml:id="_2.2.267.F08">manger.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.267.L.1" corresp="#_2.2.267.09">
                         <l xml:id="_2.2.267.L01">There was a</l>
                         <l xml:id="_2.2.267.L02">sweet hopeful</l>
@@ -11974,7 +12010,7 @@ sometext</div>
                         <l xml:id="_2.2.267.L09">Kristlike Kvinne.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.267.R.1" corresp="#_2.2.267.12">
                         <l xml:id="_2.2.267.R01">URGES AND</l>
                         <l xml:id="_2.2.267.R02">WIDERURGES</l>
@@ -11984,8 +12020,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="268">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="268">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.268.01">if have faded from the fleur,<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> their arms</l>
@@ -12034,7 +12070,7 @@ sometext</div>
                            <hi rendition="#small">7</hi>
                         </hi> There is comfortism in the</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.268.F01">     <hi rendition="#sup">1</hi> One must sell it to some one, the sacred name of love.</l>
                      <l xml:id="_2.2.268.F02">     <hi rendition="#sup">2</hi> Making it up as we goes along.</l>
                      <l xml:id="_2.2.268.F03">     <hi rendition="#sup">3</hi> The law of the jungerl.</l>
@@ -12044,7 +12080,7 @@ sometext</div>
                      <l xml:id="_2.2.268.F07">Lappy. Leap me, Locklaun, for you have sensed!</l>
                      <l xml:id="_2.2.268.F08">     <hi rendition="#sup">7</hi> A washable lovable floatable doll.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.268.L.1" corresp="#_2.2.268.03">
                         <l xml:id="_2.2.268.L01">Telltale me all</l>
                         <l xml:id="_2.2.268.L02">of annaryllies.</l>
@@ -12065,7 +12101,7 @@ sometext</div>
                         <l xml:id="_2.2.268.L11">you're erse.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.268.R.1" corresp="#_2.2.268.07">
                         <l xml:id="_2.2.268.R01">EARLY</l>
                         <l xml:id="_2.2.268.R02">NOTIONS OF</l>
@@ -12081,8 +12117,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="269">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="269">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.269.01">knowledge that often hate on first hearing</l>
                      <l xml:id="_2.2.269.02">comes of love by second sight. Have your</l>
                      <l xml:id="_2.2.269.03">little sintalks in the dunk of subjunctions, dual</l>
@@ -12127,14 +12163,14 @@ sometext</div>
                      <l xml:id="_2.2.269.30">never braught the participle of a present to a</l>
                      <l xml:id="_2.2.269.31">desponent hortatrixy, vindicatively I say it,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.269.F01">     <hi rendition="#sup">1</hi> With her poodle feinting to be let off and feeling dead in herself. Is love</l>
                      <l xml:id="_2.2.269.F02">worse living?</l>
                      <l xml:id="_2.2.269.F03">     <hi rendition="#sup">2</hi> If she can't follow suit Renée goes to the pack.</l>
                      <l xml:id="_2.2.269.F04">     <hi rendition="#sup">3</hi> Improper frictions is maledictions and mens uration makes me mad.</l>
                      <l xml:id="_2.2.269.F05">     <hi rendition="#sup">4</hi> Llong and Shortts Primer of Black and White Wenchcraft.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.269.L.1" corresp="#_2.2.269.21">
                         <l xml:id="_2.2.269.L01">Undante</l>
                         <l xml:id="_2.2.269.L02">umoroso.</l>
@@ -12149,8 +12185,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="270">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="270">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.270.01">from her postconditional future.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> Lumpsome</l>
@@ -12195,7 +12231,7 @@ sometext</div>
                      <l xml:id="_2.2.270.30">ya, ya, in their memoiries of Hireling's puny</l>
                      <l xml:id="_2.2.270.31">wars, end so, und all, ga, ga, of The O'Brien,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.270.F01">     <hi rendition="#sup">1</hi> The gaggles all out.</l>
                      <l xml:id="_2.2.270.F02">     <hi rendition="#sup">2</hi> He's just bug nuts on white mate he hasn't the teath nor the grits to choo</l>
                      <l xml:id="_2.2.270.F03">and that's what's wrong with Lang Wang Wurm, old worbbling goesbelly.</l>
@@ -12203,7 +12239,7 @@ sometext</div>
                      <l xml:id="_2.2.270.F05">think I may add hell.</l>
                      <l xml:id="_2.2.270.F06">     <hi rendition="#sup">4</hi> He is my all menkind of every desception.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.270.L.1" corresp="#_2.2.270.04">
                         <l xml:id="_2.2.270.L01">I'll go for that</l>
                         <l xml:id="_2.2.270.L02">small polly if</l>
@@ -12222,7 +12258,7 @@ sometext</div>
                         <l xml:id="_2.2.270.L08">Ulstria,</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.270.R.1" corresp="#_2.2.270.29">
                         <l xml:id="_2.2.270.R01">CONCOMI-</l>
                         <lb break="no"/>
@@ -12231,8 +12267,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="271">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="271">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.271.01">The O'Connor, The Mac Loughlin and The</l>
                      <l xml:id="_2.2.271.02">Mac Namara with summed their appondage,</l>
                      <l xml:id="_2.2.271.03">da, da, of Sire Jeallyous Seizer, that gamely</l>
@@ -12275,7 +12311,7 @@ sometext</div>
                      <l xml:id="_2.2.271.28">fruit that hung on the tree that grew in the</l>
                      <l xml:id="_2.2.271.29">garden Gough gave. Wide hiss, we're wizen-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.271.F01">     <hi rendition="#sup">1</hi> All his teeths back to the front, then the moon and then the moon with</l>
                      <l xml:id="_2.2.271.F02">a hole behind it.</l>
                      <l xml:id="_2.2.271.F03">     <hi rendition="#sup">2</hi> Skip one, flop fore, jennies in the cabbage store.</l>
@@ -12287,7 +12323,7 @@ sometext</div>
                      <l xml:id="_2.2.271.F08">appliques, would whollymost applissiate a nice shiny sleekysilk out of that</l>
                      <l xml:id="_2.2.271.F09">slippering snake charmeuse.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.271.L.1" corresp="#_2.2.271.01">
                         <l xml:id="_2.2.271.L01">Monastir,</l>
                         <l xml:id="_2.2.271.L02">Leninstar and</l>
@@ -12310,7 +12346,7 @@ sometext</div>
                         <l xml:id="_2.2.271.L13">crush sake, chawley!</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.271.R.1" corresp="#_2.2.271.01">
                         <l xml:id="_2.2.271.R01">COUNSEL</l>
                         <l xml:id="_2.2.271.R02">AND CON-</l>
@@ -12331,8 +12367,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="272">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="272">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.272.01">ing. Hoots fromm, we're globing. Why hidest</l>
                      <l xml:id="_2.2.272.02">thou hinder thy husband his name? Leda, Lada,</l>
                      <l xml:id="_2.2.272.03">aflutter-afraida, so does your girdle grow!</l>
@@ -12377,14 +12413,14 @@ sometext</div>
                      <l xml:id="_2.2.272.30">then bearagain bulligan. Gringrin gringrin.</l>
                      <l xml:id="_2.2.272.31">Staffs varsus herds and bucks vursus barks.</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.272.F01">     <hi rendition="#sup">1</hi> What's that, ma'am? says I.</l>
                      <l xml:id="_2.2.272.F02">     <hi rendition="#sup">2</hi> As you say yourself.</l>
                      <l xml:id="_2.2.272.F03">     <hi rendition="#sup">3</hi> That's the lethemuse but it washes off.</l>
                      <l xml:id="_2.2.272.F04">     <hi rendition="#sup">4</hi> Where he fought the shessock of his stimmstammer and we caught the</l>
                      <l xml:id="_2.2.272.F05">pepettes of our lovelives.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.272.L.1" corresp="#_2.2.272.08">
                         <l xml:id="_2.2.272.L01">Pige pas.</l>
                      </ab>
@@ -12406,7 +12442,7 @@ sometext</div>
                         <l xml:id="_2.2.272.L07">atthems.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.272.R.1" corresp="#_2.2.272.09">
                         <l xml:id="_2.2.272.R01">PANOPTICAL</l>
                         <l xml:id="_2.2.272.R02">PURVIEW OF</l>
@@ -12420,8 +12456,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="273">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="273">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.273.01">By old Grumbledum's walls. Bumps, bellows</l>
                      <l xml:id="_2.2.273.02">and bawls.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
@@ -12473,7 +12509,7 @@ sometext</div>
                      <l xml:id="_2.2.273.27">napollyon and hitheris poorblond piebold</l>
                      <l xml:id="_2.2.273.28">hoerse. Huirse. With its tricuspidal hauberk-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.273.F01">     <hi rendition="#sup">1</hi> Shake eternity and lick creation.</l>
                      <l xml:id="_2.2.273.F02">     <hi rendition="#sup">2</hi> I'm blest if I can see.</l>
                      <l xml:id="_2.2.273.F03">     <hi rendition="#sup">3</hi> Hoppity Huhneye, hoosh the hen. I like cluckers, you like nuts (wink).</l>
@@ -12484,7 +12520,7 @@ sometext</div>
                      <l xml:id="_2.2.273.F08">     <hi rendition="#sup">7</hi> My six is no secret, sir, she said.</l>
                      <l xml:id="_2.2.273.F09">     <hi rendition="#sup">8</hi> Yes, there, Tad, thanks, give, from, tathair, look at that now.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.273.L.1" corresp="#_2.2.273.01">
                         <l xml:id="_2.2.273.L01">Curragh</l>
                         <l xml:id="_2.2.273.L02">machree, me</l>
@@ -12514,8 +12550,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="274">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="274">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.274.01">helm coverchaf emblem on. For the man that</l>
                      <l xml:id="_2.2.274.02">broke the ranks on Monte Sinjon. The all-</l>
                      <lb break="no"/>
@@ -12562,13 +12598,13 @@ sometext</div>
                      <l xml:id="_2.2.274.31">and learning how to put a broad face bronzily</l>
                      <l xml:id="_2.2.274.32">out through a broken breached meataerial</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.274.F01">     <hi rendition="#sup">1</hi> Go up quick, stay so long, come down slow!</l>
                      <l xml:id="_2.2.274.F02">     <hi rendition="#sup">2</hi> If I gnows me gneesgnobs the both of him is gnatives of Genuas.</l>
                      <l xml:id="_2.2.274.F03">     <hi rendition="#sup">3</hi> A glass of peel and pip for Mr Potter of Texas, please.</l>
                      <l xml:id="_2.2.274.F04">     <hi rendition="#sup">4</hi> All the world loves a big gleaming jelly.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.274.L.1" corresp="#_2.2.274.02">
                         <l xml:id="_2.2.274.L01">Murdoch.</l>
                      </ab>
@@ -12590,8 +12626,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="275">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="275">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.275.01">from Bryan Awlining! Erin's hircohaired</l>
                      <l xml:id="_2.2.275.02">culoteer.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
@@ -12637,7 +12673,7 @@ sometext</div>
                      <l xml:id="_2.2.275.26">be. But, bless his cowly head and press his</l>
                      <l xml:id="_2.2.275.27">crankly hat, what a world's woe is each's</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.275.F01">     <hi rendition="#sup">1</hi> A pengeneepy for your warcheekeepy.</l>
                      <l xml:id="_2.2.275.F02">     <hi rendition="#sup">2</hi> My globe goes gaddy at geography giggle pending which time I was</l>
                      <l xml:id="_2.2.275.F03">looking for my shoe all through Arabia.</l>
@@ -12650,7 +12686,7 @@ sometext</div>
                      <l xml:id="_2.2.275.F10">fat arks they would shaik all to sheeks.</l>
                      <l xml:id="_2.2.275.F11">     <hi rendition="#sup">6</hi> Traduced into jinglish janglage for the nusances of dolphins born.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.275.L.1" corresp="#_2.2.275.01">
                         <l xml:id="_2.2.275.L01">Puzzly, puzzly,</l>
                         <l xml:id="_2.2.275.L02">I smell a cat.</l>
@@ -12674,7 +12710,7 @@ sometext</div>
                         <l xml:id="_2.2.275.L12">rotbook of dates.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.275.R.1" corresp="#_2.2.275.03">
                         <l xml:id="_2.2.275.R01">FROM CENO-</l>
                         <lb break="no"/>
@@ -12693,8 +12729,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="276">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="276">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.276.01">other's weariness waiting to beadroll his own</l>
                      <l xml:id="_2.2.276.02">properer mistakes, the backslapping glad-</l>
                      <lb break="no"/>
@@ -12741,7 +12777,7 @@ sometext</div>
                      <l xml:id="_2.2.276.26">with hoodie hearsemen carrawain we keep</l>
                      <l xml:id="_2.2.276.27">is peace who follow his law, Sunday</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.276.F01">     <hi rendition="#sup">1</hi> He gives me pulpititions with his Castlecowards never in these twowsers</l>
                      <l xml:id="_2.2.276.F02">and ever in those twawsers and then babeteasing us out of our hoydenname.</l>
                      <l xml:id="_2.2.276.F03">     <hi rendition="#sup">2</hi> My goldfashioned bother near drave me roven mad and I dyeing to</l>
@@ -12755,7 +12791,7 @@ sometext</div>
                      <l xml:id="_2.2.276.F11">     <hi rendition="#sup">6</hi> Pipette. I can almost feed their sweetness at my lisplips.</l>
                      <l xml:id="_2.2.276.F12">     <hi rendition="#sup">7</hi> A liss in hunterland.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.276.L.1" corresp="#_2.2.276.03">
                         <l xml:id="_2.2.276.L01">Some is out for</l>
                         <l xml:id="_2.2.276.L02">twoheaded dul-</l>
@@ -12783,7 +12819,7 @@ sometext</div>
                         <l xml:id="_2.2.276.L13">stown.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.276.R.1" corresp="#_2.2.276.11">
                         <l xml:id="_2.2.276.R01">THE MON-</l>
                         <lb break="no"/>
@@ -12803,8 +12839,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="277">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="277">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.277.01">King.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> His sevencoloured's soot (Ochone!</l>
@@ -12852,7 +12888,7 @@ sometext</div>
                      <lb break="no"/>
                      <l xml:id="_2.2.277.26">graphy in mud. Some may seek to dodge the</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.277.F01">     <hi rendition="#sup">1</hi> I wonder if I put the old buzzerd one night to suckle in Millickmaam's</l>
                      <l xml:id="_2.2.277.F02">honey like they use to emballem some of the special popes with a book in his</l>
                      <l xml:id="_2.2.277.F03">hand and his mouth open.</l>
@@ -12866,7 +12902,7 @@ sometext</div>
                      <l xml:id="_2.2.277.F11">     <hi rendition="#sup">7</hi> Oh, could we do with this waddled of ours like that redbanked profanian</l>
                      <l xml:id="_2.2.277.F12">with his bakset of yosters.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.277.L.1" corresp="#_2.2.277.03">
                         <l xml:id="_2.2.277.L01">Why so mucky</l>
                         <l xml:id="_2.2.277.L02">spick bridges</l>
@@ -12903,8 +12939,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="278">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="278">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.278.01">gobbet for its quantity of quality but who</l>
                      <l xml:id="_2.2.278.02">wants to cheat the choker's got to learn to</l>
                      <l xml:id="_2.2.278.03">chew the cud. Allwhichhole scrubs on scroll</l>
@@ -12950,7 +12986,7 @@ sometext</div>
                      <l xml:id="_2.2.278.25">     We have wounded our way on foe tris</l>
                      <l xml:id="_2.2.278.26">prince till that force in the gill is faint afarred</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.278.F01">     <hi rendition="#sup">1</hi> Gosem pher, gezumpher, greeze a jarry grim felon! Good bloke him!</l>
                      <l xml:id="_2.2.278.F02">     <hi rendition="#sup">2</hi> And if they was setting on your stool as hard as my was she could beth</l>
                      <l xml:id="_2.2.278.F03">her bothom dolours he'd have a culious impressiom on the diminitive that</l>
@@ -12966,7 +13002,7 @@ sometext</div>
                      <l xml:id="_2.2.278.F12">     <hi rendition="#sup">7</hi> Strutting as proud as a great turquin weggin that cuckhold on his Eddems</l>
                      <l xml:id="_2.2.278.F13">and Clay's hat.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.278.L.1" corresp="#_2.2.278.04">
                         <l xml:id="_2.2.278.L01">Pitchcap and</l>
                         <l xml:id="_2.2.278.L02">triangle, noose</l>
@@ -12994,7 +13030,7 @@ sometext</div>
                         <l xml:id="_2.2.278.L16">Gent.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.278.R.1" corresp="#_2.2.278.07">
                         <l xml:id="_2.2.278.R01">INCIPIT IN-</l>
                         <lb break="no"/>
@@ -13006,8 +13042,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="279">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="279">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.279.01">and the face in the treebark feigns afear. This</l>
                      <l xml:id="_2.2.279.02">is rainstones ringing. Strangely cult for this</l>
                      <l xml:id="_2.2.279.03">ceasing of the yore. But Erigureen is ever.</l>
@@ -13021,7 +13057,7 @@ sometext</div>
                         </hi>
                      </l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.279.F01">     <hi rendition="#sup">1</hi> Come, smooth of my slate, to the beat of my blosh! With all these gelded</l>
                      <l xml:id="_2.2.279.F02">ewes jilting about and the thrills and ills of laylock blossoms three's so much</l>
                      <l xml:id="_2.2.279.F03">more plants than chants for cecilies that I was thinking fairly killing times of</l>
@@ -13064,7 +13100,7 @@ sometext</div>
                      <l xml:id="_2.2.279.F36">friend and ah me sweet creature, what buys the bed while wits borrows the</l>
                      <l xml:id="_2.2.279.F37">clothes.</l>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.279.R.1" corresp="#_2.2.279.01">
                         <l xml:id="_2.2.279.R01">MODES COA-</l>
                         <lb break="no"/>
@@ -13080,8 +13116,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="280">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="280">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.280.01">A scene at sight. Or dreamoneire. Which</l>
                      <l xml:id="_2.2.280.02">they shall memorise. By her freewritten</l>
                      <l xml:id="_2.2.280.03">Hopely for ear that annalykeses if scares for</l>
@@ -13122,7 +13158,7 @@ sometext</div>
                      <l xml:id="_2.2.280.35">the fire, shake the dust off and dream your one</l>
                      <l xml:id="_2.2.280.36">who would give her sidecurls to. Till later</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.280.L.1" corresp="#_2.2.280.05">
                         <l xml:id="_2.2.280.L01">Bibelous hics-</l>
                         <lb break="no"/>
@@ -13148,8 +13184,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="281">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="281">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.281.01">Lammas is led in by baith our washwives, a</l>
                      <l xml:id="_2.2.281.02">weird of wonder tenebrous as that evil thorn-</l>
                      <lb break="no"/>
@@ -13215,7 +13251,7 @@ sometext</div>
                      <l xml:id="_2.2.281.28">     And!</l>
                      <l xml:id="_2.2.281.29">     Nay, rather!</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.281.F01">     <hi rendition="#sup">1</hi> The nasal foss of our natal folkfarthers so so much now for Valsing-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.281.F02">giddyrex and his grand arks day triump.</l>
@@ -13226,7 +13262,7 @@ sometext</div>
                      <l xml:id="_2.2.281.F07">     <hi rendition="#sup">4</hi> All this Mitchells is a niggar for spending and I will go to the length of</l>
                      <l xml:id="_2.2.281.F08">seeing that one day Big Mig will be nickleless himself.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.281.L.1" corresp="#_2.2.281.01">
                         <l xml:id="_2.2.281.L01">Mai maintenante</l>
                         <l xml:id="_2.2.281.L02">elle est venuse.</l>
@@ -13248,7 +13284,7 @@ sometext</div>
                         <l xml:id="_2.2.281.L12">preast.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.281.R.1" corresp="#_2.2.281.04">
                         <l xml:id="_2.2.281.R01">THE PART</l>
                         <l xml:id="_2.2.281.R02">PLAYED BY</l>
@@ -13279,8 +13315,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="282">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="282">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.282.01">     With sobs for his job, with tears</l>
                      <l xml:id="_2.2.282.02">for his toil, with horror for his squalor</l>
                      <l xml:id="_2.2.282.03">but with pep for his perdition,<hi rendition="#sup">
@@ -13326,14 +13362,14 @@ sometext</div>
                            <hi rendition="#small">4</hi>
                         </hi> Niall Dhu,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.282.F01">     <hi rendition="#sup">1</hi> While I'll wind the wildwoods' bluckbells among my window's weeds.</l>
                      <l xml:id="_2.2.282.F02">     <hi rendition="#sup">2</hi> Lawdy Dawdy Simpers.</l>
                      <l xml:id="_2.2.282.F03">     <hi rendition="#sup">3</hi> But where, O where, is me lickle dig done?</l>
                      <l xml:id="_2.2.282.F04">     <hi rendition="#sup">4</hi> That's his whisper waltz I like from Pigott's with that Lancydancy step.</l>
                      <l xml:id="_2.2.282.F05">Stop.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.282.L.1" corresp="#_2.2.282.02">
                         <l xml:id="_2.2.282.L01">Tricks stunts.</l>
                      </ab>
@@ -13349,7 +13385,7 @@ sometext</div>
                         <l xml:id="_2.2.282.L07">pomposity.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.282.R.1" corresp="#_2.2.282.01">
                         <l xml:id="_2.2.282.R01">ANTITHESIS OF AMBI-</l>
                         <lb break="no"/>
@@ -13378,8 +13414,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="283">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="283">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.283.01">Foughty Unn, Enoch Thortig, endso one, like</l>
                      <l xml:id="_2.2.283.02">to pitch of your cap, pac, on to tin tall spilli-</l>
                      <lb break="no"/>
@@ -13423,14 +13459,14 @@ sometext</div>
                      <l xml:id="_2.2.283.31">stead of trying every which way to kinder</l>
                      <l xml:id="_2.2.283.32">smear it out poison long. Show that the</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.283.F01">     <hi rendition="#sup">1</hi> Twelve buttles man, twentyeight bows of curls, forty bonnets woman</l>
                      <l xml:id="_2.2.283.F02">and ever youthfully yours makes alleven add the hundred.</l>
                      <l xml:id="_2.2.283.F03">     <hi rendition="#sup">2</hi> Gamester Damester in the road to Rouen he grows more like his deed</l>
                      <l xml:id="_2.2.283.F04">every die.</l>
                      <l xml:id="_2.2.283.F05">     <hi rendition="#sup">3</hi> Slash-the-Pill lifts the pellet. Run, Phoenix, run!</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.283.L.1" corresp="#_2.2.283.03">
                         <l xml:id="_2.2.283.L01">Non plus ulstra,</l>
                         <l xml:id="_2.2.283.L02">Elba, nec, cashel-</l>
@@ -13443,8 +13479,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="284">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="284">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.284.01">median, hce che ech, interecting at royde</l>
                      <l xml:id="_2.2.284.02">angles the parilegs of a given obtuse one bis-</l>
                      <lb break="no"/>
@@ -13496,7 +13532,7 @@ sometext</div>
                      <l xml:id="_2.2.284.29">pictorial shimmer so long as, gad of the gidday,</l>
                      <l xml:id="_2.2.284.30">pictorial summer, viridorefulvid, lits asheen,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.284.F01">     <hi rendition="#sup">1</hi> Dideney, Dadeney, Dudeney, O, I'd know that putch on your poll.</l>
                      <l xml:id="_2.2.284.F02">     <hi rendition="#sup">2</hi> That is tottinghim in his boots.</l>
                      <l xml:id="_2.2.284.F03">     <hi rendition="#sup">3</hi> Come all ye hapney coachers and support the richview press.</l>
@@ -13506,7 +13542,7 @@ sometext</div>
                      <l xml:id="_2.2.284.F06">Braham the Bear. V for wadlock, P for shift, H for Lona the Konkubine.</l>
                      <l xml:id="_2.2.284.F07">     <hi rendition="#sup">5</hi> A gee is just a jay on the jaunts cowsway.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.284.L.1" corresp="#_2.2.284.01">
                         <l xml:id="_2.2.284.L01">A stodge An-</l>
                         <lb break="no"/>
@@ -13525,8 +13561,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="285">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="285">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.285.01">but (lenz alack lends a lot), if this habby cyclic</l>
                      <l xml:id="_2.2.285.02">erdor be outraciously enviolated by a mierelin</l>
                      <l xml:id="_2.2.285.03">roundtableturning, like knuts in maze, the zitas</l>
@@ -13574,7 +13610,7 @@ sometext</div>
                      <l xml:id="_2.2.285.28">to be comprendered. Inexcessible as thy by</l>
                      <l xml:id="_2.2.285.29">god ways. The aximones. And their prosta-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.285.F01">     <hi rendition="#sup">1</hi>  Talking about trilbits.</l>
                      <l xml:id="_2.2.285.F02">     <hi rendition="#sup">2</hi>  Barneycorrall, a precedent for the prodection of curiosity from children.</l>
                      <l xml:id="_2.2.285.F03">     <hi rendition="#sup">3</hi>  A pfurty pscore of ruderic rossies haremhorde for his divelsion.</l>
@@ -13585,7 +13621,7 @@ sometext</div>
                      <l xml:id="_2.2.285.F08">     <hi rendition="#sup">6</hi> Tomatoes malmalaid with De Quinceys salade can be tastily served with</l>
                      <l xml:id="_2.2.285.F09">Indiana Blues on the violens.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.285.L.1" corresp="#_2.2.285.08">
                         <l xml:id="_2.2.285.L01">Finnfinnotus of</l>
                         <l xml:id="_2.2.285.L02">Cincinnati.</l>
@@ -13601,8 +13637,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="286">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="286">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.286.01">lutes. For his neuralgiabrown.</l>
                      <l xml:id="_2.2.286.02">Equal to=aosch.</l>
                      <l xml:id="_2.2.286.03">     P.t.l.o.a.t.o.</l>
@@ -13649,14 +13685,14 @@ sometext</div>
                            <hi rendition="#small">5</hi>
                         </hi> Oglores,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.286.F01">     <hi rendition="#sup">1</hi> As Rhombulus and Rhebus went building rhomes one day.</l>
                      <l xml:id="_2.2.286.F02">     <hi rendition="#sup">2</hi> The trouveller.</l>
                      <l xml:id="_2.2.286.F03">     <hi rendition="#sup">3</hi> Of the disorded visage.</l>
                      <l xml:id="_2.2.286.F04">     <hi rendition="#sup">4</hi> Singlebarrelled names for doubleparalleled twixtytwins.</l>
                      <l xml:id="_2.2.286.F05">     <hi rendition="#sup">5</hi> Like pudging a spoon fist of sugans into a sotspot of choucolout.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.286.L.2" corresp="#_2.2.286.11">
                         <l xml:id="_2.2.286.L01">Vive Paco</l>
                         <l xml:id="_2.2.286.L02">Hunter!</l>
@@ -13677,7 +13713,7 @@ sometext</div>
                         <l xml:id="_2.2.286.L10">jumeantry.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.286.R.1" corresp="#_2.2.286.03">
                         <l xml:id="_2.2.286.R01">HEPTAGRAMMATON.</l>
                      </ab>
@@ -13718,7 +13754,7 @@ sometext</div>
                </div>
                <div type="page" subtype="C10-287" n="287">
                   <div type="C10-278-top">
-                     <div type="C10-C">
+                     <div type="C10-C" rendition="PageC10CentreColumn">
                         <l xml:id="_2.2.287.01">the virtuoser prays, olorum! What the D.V.</l>
                         <l xml:id="_2.2.287.02">would I do that for? That's a goosey's gans-</l>
                         <lb break="no"/>
@@ -13744,7 +13780,7 @@ sometext</div>
                            </hi>
                         </l>
                      </div>
-                     <div type="C10-L" rendition="#c10-L-style">
+                     <div type="C10-L" rendition="PageC10LeftColumn">
                         <ab xml:id="_2.2.287.L.1" corresp="#_2.2.287.07">
                            <l xml:id="_2.2.287.L01">Wolsherwomens</l>
                            <l xml:id="_2.2.287.L02">at their weirdst.</l>
@@ -13792,7 +13828,7 @@ sometext</div>
                      <l xml:id="_2.2.287.30">same and over his own choirage at Backlane Univarsity, among of</l>
                      <l xml:id="_2.2.287.31">which pupal souaves the pizdrool was pulled up, bred and bat-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.287.F01">     <hi rendition="#sup">1</hi> Will you walk into my wavetrap? said the spiter to the shy.</l>
                      <l xml:id="_2.2.287.F02">     <hi rendition="#sup">2</hi> If we each could always do all we ever did.</l>
                      <l xml:id="_2.2.287.F03">     <hi rendition="#sup">3</hi> Dope in Canorian words we've made. Spish from the Doc.</l>
@@ -13848,7 +13884,7 @@ sometext</div>
                            <hi rendition="#small">7</hi>
                         </hi> still hold</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.288.F01">     <hi rendition="#sup">1</hi> An ounceworth of onions for a pennyawealth of sobs.</l>
                      <l xml:id="_2.2.288.F02">     <hi rendition="#sup">2</hi> Who brought us into the yellow world!</l>
                      <l xml:id="_2.2.288.F03">     <hi rendition="#sup">3</hi> Because it's run on the mountain and river system.</l>
@@ -13913,7 +13949,7 @@ sometext</div>
                      <l xml:id="_2.2.289.29">daughter, with the Comes Tichiami, of Prima Vista, Abroad,</l>
                      <l xml:id="_2.2.289.30">suddenly), and beauty alone of all dare say when now, uncrowned,</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.289.F01">     <hi rendition="#sup">1</hi> That is to sight, when cleared of factions, vulgure and decimating.</l>
                      <l xml:id="_2.2.289.F02">     <hi rendition="#sup">2</hi> They just spirits a body away.</l>
                      <l xml:id="_2.2.289.F03">     <hi rendition="#sup">3</hi> Patatapadatback.</l>
@@ -13978,7 +14014,7 @@ sometext</div>
                            <hi rendition="#small">7</hi>
                         </hi> the</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.290.F01">     <hi rendition="#sup">1</hi> Muckross Abbey with the creepers taken off.</l>
                      <l xml:id="_2.2.290.F02">     <hi rendition="#sup">2</hi> Joke and Jilt will have their tilt.</l>
                      <l xml:id="_2.2.290.F03">     <hi rendition="#sup">3</hi> Old Mamalujorum and Rawrogerum.</l>
@@ -14045,7 +14081,7 @@ sometext</div>
                            <hi rendition="#small">8</hi>
                         </hi> — well, diarmuee and</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.291.F01">     <hi rendition="#sup">1</hi> O hce! O hce!</l>
                      <l xml:id="_2.2.291.F02">     <hi rendition="#sup">2</hi> Six and seven the League.</l>
                      <l xml:id="_2.2.291.F03">     <hi rendition="#sup">3</hi> It's all round me hat I'll wear a drooping dido.</l>
@@ -14104,14 +14140,14 @@ sometext</div>
                      <l xml:id="_2.2.292.31">yearlings — you must, how, in undivided reawlity draw the line</l>
                      <l xml:id="_2.2.292.32">somewhawre)</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.292.F01">     <hi rendition="#sup">1</hi> Where Buickly of the Glass and Bellows pumped the Rudge engineral.</l>
                      <l xml:id="_2.2.292.F02">     <hi rendition="#sup">2</hi> Matter of Brettaine and brut fierce.</l>
                      <l xml:id="_2.2.292.F03">     <hi rendition="#sup">3</hi> Bussmullah, cried Lord Wolsley, how me Aunty Mag'll row!</l>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="293">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="293">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.293.01">     Coss? Cossist? Your parn! You, you make</l>
                      <l xml:id="_2.2.293.02">what name? (and in truth, as a poor soul is</l>
                      <l xml:id="_2.2.293.03">between shift and shift ere the death he has</l>
@@ -14148,12 +14184,12 @@ sometext</div>
                      <l xml:id="_2.2.293.23">leaves alass! Aiaiaiai, Antiann, we're last to</l>
                      <l xml:id="_2.2.293.24">the lost, Loulou! Tis perfect. Now (lens</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.293.F01">     <hi rendition="#sup">1</hi> Draumcondra's Dreamcountry where the betterlies blow.</l>
                      <l xml:id="_2.2.293.F02">     <hi rendition="#sup">2</hi> O, Laughing Sally, are we going to be toadhauntered by that old Pantifox</l>
                      <l xml:id="_2.2.293.F03">Sir Somebody Something, Burtt, for the rest of our secret stripture?</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.293.L.1" corresp="#_2.2.293.13">
                         <l xml:id="_2.2.293.L01">Uteralterance or</l>
                         <l xml:id="_2.2.293.L02">the Interplay of</l>
@@ -14168,7 +14204,7 @@ sometext</div>
                         <l xml:id="_2.2.293.L08">tex.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.293.R.1" corresp="#_2.2.293.01">
                         <l xml:id="_2.2.293.R01">WHY MY AS</l>
                         <l xml:id="_2.2.293.R02">LIKEWISE</l>
@@ -14176,8 +14212,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="294">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="294">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.294.01">your dappled yeye here, mine's presbyoperian,</l>
                      <l xml:id="_2.2.294.02">shill and wall) we see the copyngink strayed-</l>
                      <lb break="no"/>
@@ -14217,7 +14253,7 @@ sometext</div>
                      <l xml:id="_2.2.294.25">ting! ting ting!) By his magmasine fall. Lumps,</l>
                      <l xml:id="_2.2.294.26">lavas and all.<hi rendition="#sup">
                            <hi rendition="#small">4</hi>
-                        </hi> 
+                        </hi>
                         <hi rendition="#i">Bene!</hi> But, thunder and turf, it's</l>
                      <l xml:id="_2.2.294.27">not alover yet! One recalls Byzantium. The</l>
                      <l xml:id="_2.2.294.28">mystery repeats itself todate as our callback</l>
@@ -14227,7 +14263,7 @@ sometext</div>
                         </hi> used to sing, as I think, now and then</l>
                      <l xml:id="_2.2.294.31">consinuously over her possetpot in her quer</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.294.F01">     <hi rendition="#sup">1</hi> Ex jup pep off Carpenger Strate. The kids' and dolls' home. Makeacake-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.294.F02">ache.</l>
@@ -14236,7 +14272,7 @@ sometext</div>
                      <l xml:id="_2.2.294.F05">     <hi rendition="#sup">4</hi> At the foot of Bagnabun Banbasday was lost on one.</l>
                      <l xml:id="_2.2.294.F06">     <hi rendition="#sup">5</hi> We're all found of our anmal matter.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.294.L.1" corresp="#_2.2.294.08">
                         <l xml:id="_2.2.294.L01">Sarga, or the</l>
                         <l xml:id="_2.2.294.L02">path of outgoing.</l>
@@ -14251,8 +14287,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="295">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="295">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.295.01">homolocous humminbass hesterdie and ist-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.295.02">herdie forivor.<hi rendition="#sup">
@@ -14298,12 +14334,12 @@ sometext</div>
                      <l xml:id="_2.2.295.32">metely in their suite poi and poi, dunloop</l>
                      <l xml:id="_2.2.295.33">into eath the ocher. Lucihere.! I fee where you</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.295.F01">     <hi rendition="#sup">1</hi> Sewing up the beillybursts in their buckskin shiorts for big Kapitayn</l>
                      <l xml:id="_2.2.295.F02">Killykook and the Jukes of Kelleiney.</l>
                      <l xml:id="_2.2.295.F03">     <hi rendition="#sup">2</hi> Say where! A timbrelfill of twinkletinkle.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.295.L.1" corresp="#_2.2.295.03">
                         <l xml:id="_2.2.295.L01">The Vegetable</l>
                         <l xml:id="_2.2.295.L02">Cell and its Pri-</l>
@@ -14317,8 +14353,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="296">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="296">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.296.01">mea. The doubleviewed seeds. Nun, lemmas</l>
                      <l xml:id="_2.2.296.02">quatsch, vide pervoys akstiom, and I think as</l>
                      <l xml:id="_2.2.296.03">I'm suqeez in the limon, stickme punctum, but</l>
@@ -14361,14 +14397,14 @@ sometext</div>
                         </hi> Now, <hi rendition="#i">aqua in buccat</hi>. I'll make you to</l>
                      <l xml:id="_2.2.296.31">see figuratleavely the whome of your eternal</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.296.F01">     <hi rendition="#sup">1</hi> Parsee ffrench for the upholdsterer would be delightered.</l>
                      <l xml:id="_2.2.296.F02">     <hi rendition="#sup">2</hi> I'll pass out if the screw spliss his strut.</l>
                      <l xml:id="_2.2.296.F03">     <hi rendition="#sup">3</hi> Thargam then goeligum? If you sink I can, swimford. Suksumkale!</l>
                      <l xml:id="_2.2.296.F04">     <hi rendition="#sup">4</hi> Hasitatense?</l>
                      <l xml:id="_2.2.296.F05">     <hi rendition="#sup">5</hi> The impudence of that in girl's things!</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.296.L.1" corresp="#_2.2.296.08">
                         <l xml:id="_2.2.296.L01">Zweispaltung as</l>
                         <l xml:id="_2.2.296.L02">Fundemaintalish</l>
@@ -14378,8 +14414,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="297">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="297">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.297.01">geomater. And if you flung her headdress on</l>
                      <l xml:id="_2.2.297.02">her from under her highlows you'd wheeze</l>
                      <l xml:id="_2.2.297.03">whyse Salmonson set his seel on a hexen-</l>
@@ -14428,14 +14464,14 @@ sometext</div>
                         </hi>
                      </l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.297.F01">     <hi rendition="#sup">1</hi> The chape of Doña Speranza of the Nacion.</l>
                      <l xml:id="_2.2.297.F02">     <hi rendition="#sup">2</hi> Ugol egal ogle. Mi vidim Mi.</l>
                      <l xml:id="_2.2.297.F03">     <hi rendition="#sup">3</hi> It is, it is Sangannon's dream.</l>
                      <l xml:id="_2.2.297.F04">     <hi rendition="#sup">4</hi> And all meinkind.</l>
                      <l xml:id="_2.2.297.F05">     <hi rendition="#sup">5</hi> Whangpoos the paddle and whiss whee whoo.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.297.L.1" corresp="#_2.2.297.04">
                         <l xml:id="_2.2.297.L01">Destiny, In-</l>
                         <lb break="no"/>
@@ -14449,8 +14485,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="298">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="298">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.298.01">Paa lickam laa lickam, apl lpa! This it is an her.</l>
                      <l xml:id="_2.2.298.02">You see her it. Which it whom you see it is</l>
                      <l xml:id="_2.2.298.03">her. And if you could goaneggbetter we'd soon</l>
@@ -14504,12 +14540,12 @@ sometext</div>
                      <l xml:id="_2.2.298.32">of her umdescribables (one has thoughts of</l>
                      <l xml:id="_2.2.298.33">that eternal Rome) shrinks from schurtiness</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.298.F01">     <hi rendition="#sup">1</hi> I enjoy as good as anyone.</l>
                      <l xml:id="_2.2.298.F02">     <hi rendition="#sup">2</hi> Neither a soul to be saved nor a body to be kicked.</l>
                      <l xml:id="_2.2.298.F03">     <hi rendition="#sup">3</hi> The boast of the town.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.298.L.1" corresp="#_2.2.298.01">
                         <l xml:id="_2.2.298.L01">Ambages and</l>
                         <l xml:id="_2.2.298.L02">Their Rôle.</l>
@@ -14528,8 +14564,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="299">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="299">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.299.01">to scherts.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> Scholium, there are trist sigheds to</l>
@@ -14578,7 +14614,7 @@ sometext</div>
                      <l xml:id="_2.2.299.30">copperads. Ever thought about Guinness's?</l>
                      <l xml:id="_2.2.299.31">And the regrettable Parson Rome's advice?</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.299.F01">     <hi rendition="#sup">1</hi> Hen's bens, are we soddy we missiled her?</l>
                      <l xml:id="_2.2.299.F02">     <hi rendition="#sup">2</hi> I call that a scumhead.</l>
                      <l xml:id="_2.2.299.F03">     <hi rendition="#sup">3</hi> Pure chingchong idiotism with any way words all in one soluble. Gee</l>
@@ -14587,7 +14623,7 @@ sometext</div>
                            <g ref="#HCE"/>, <g ref="#ALP"/>, <g ref="#ISSY"/>, <g ref="#FOUR"/>, <g ref="#BOX"/>, <g ref="#SHAUN"/>, <g ref="#SHEM"/>.</hi> Hoodle doodle,</l>
                      <l xml:id="_2.2.299.F06">fam.?</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.299.L.1" corresp="#_2.2.299.09">
                         <l xml:id="_2.2.299.L01">Canine Venus</l>
                         <l xml:id="_2.2.299.L02">sublimated to</l>
@@ -14601,8 +14637,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="300">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="300">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.300.01">Want to join the police.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> You know, you were</l>
@@ -14649,13 +14685,13 @@ sometext</div>
                      <l xml:id="_2.2.300.31">sweat the juggaleer's veins (quench his quill!)</l>
                      <l xml:id="_2.2.300.32">in his napier scrag stud out bursthright tam-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.300.F01">     <hi rendition="#sup">1</hi> Picking on Nickagain, Pikey Mikey?</l>
                      <l xml:id="_2.2.300.F02">     <hi rendition="#sup">2</hi> Early morning, sir Dav Stephens, said the First Gentleman in youreups.</l>
                      <l xml:id="_2.2.300.F03">     <hi rendition="#sup">3</hi> Bag bag blockcheap, have you any will?</l>
                      <l xml:id="_2.2.300.F04">     <hi rendition="#sup">4</hi> What a lubberly whide elephant for the men-in-the straits!</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.300.L.1" corresp="#_2.2.300.09">
                         <l xml:id="_2.2.300.L01">Primanouriture</l>
                         <l xml:id="_2.2.300.L02">and Ultimo-</l>
@@ -14667,7 +14703,7 @@ sometext</div>
                         <l xml:id="_2.2.300.L05">Drang.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.300.R.1" corresp="#_2.2.300.09">
                         <l xml:id="_2.2.300.R01">SICK US A</l>
                         <l xml:id="_2.2.300.R02">SOCK WITH</l>
@@ -14681,8 +14717,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="301">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="301">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.301.01">quam taughtropes. (Spry him! call a blood-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.301.02">lekar! Where's Dr Brassenaarse?) Es war itwas</l>
@@ -14728,7 +14764,7 @@ sometext</div>
                      <l xml:id="_2.2.301.29">laying him long on his laughside lying sack</l>
                      <l xml:id="_2.2.301.30">to croakpartridge. (Be thou wars Rolaf's intes-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.301.F01">     <hi rendition="#sup">1</hi> And she had to seek a pond's apeace to salve her suiterkins. Sued!</l>
                      <l xml:id="_2.2.301.F02">     <hi rendition="#sup">2</hi> Excuse theyre christianbrothers irish!</l>
                      <l xml:id="_2.2.301.F03">     <hi rendition="#sup">3</hi> When she tripped against the briery bush he profused her allover with</l>
@@ -14737,7 +14773,7 @@ sometext</div>
                      <l xml:id="_2.2.301.F06">     <hi rendition="#sup">5</hi> Dear old Erosmas. Very glad you are going to Penmark. Write to the</l>
                      <l xml:id="_2.2.301.F07">corner. Grunny Grant.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.301.L.1" corresp="#_2.2.301.01">
                         <l xml:id="_2.2.301.L01">Illustration.</l>
                      </ab>
@@ -14751,8 +14787,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="302">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="302">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.302.01">tions, quoths the Bhagavat biskop Leech) Ann</l>
                      <l xml:id="_2.2.302.02">opes tipoo soon ear! If you could me lendtill</l>
                      <l xml:id="_2.2.302.03">my pascol's kondyl, sahib, and the price of a</l>
@@ -14805,14 +14841,14 @@ sometext</div>
                            <hi rendition="#small">3</hi>
                         </hi> in the drame! This is how San holy-</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.302.F01">     <hi rendition="#sup">1</hi> I loved to see the Macbeths Jerseys knacking spots of the Plumpduffs</l>
                      <l xml:id="_2.2.302.F02">Pants.</l>
                      <l xml:id="_2.2.302.F03">     <hi rendition="#sup">2</hi> Lifp year fends you all and moe, fouvenirs foft as fummer fnow, fweet</l>
                      <l xml:id="_2.2.302.F04">willings and forget-uf-knots.</l>
                      <l xml:id="_2.2.302.F05">     <hi rendition="#sup">3</hi> Gag his tubes yourself.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.302.L.1" corresp="#_2.2.302.06">
                         <l xml:id="_2.2.302.L01">Ensouling Fe-</l>
                         <lb break="no"/>
@@ -14827,7 +14863,7 @@ sometext</div>
                         <l xml:id="_2.2.302.L07">Key Signature.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.302.R.1" corresp="#_2.2.302.11">
                         <l xml:id="_2.2.302.R01">WHEN THE</l>
                         <l xml:id="_2.2.302.R02">ANSWERER</l>
@@ -14839,8 +14875,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="303">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="303">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.303.01">polypools. And this, pardonsky! is the way</l>
                      <l xml:id="_2.2.303.02">Romeopullupalleaps.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
@@ -14885,13 +14921,13 @@ sometext</div>
                      <l xml:id="_2.2.303.31">him all time twofeller longa kill dead finish</l>
                      <l xml:id="_2.2.303.32">bloody face blong you, was misocain. Wince</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.303.F01">     <hi rendition="#sup">1</hi> He, angel that I thought him, and he not aebel to speel eelyotripes., Mr</l>
                      <l xml:id="_2.2.303.F02">Tellibly Divilcult!</l>
                      <l xml:id="_2.2.303.F03">     <hi rendition="#sup">2</hi> When the dander rattles how the peacocks prance!</l>
                      <l xml:id="_2.2.303.F04">     <hi rendition="#sup">3</hi> The Brownes de Browne - Browne of Castlehacknolan.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.303.L.1" corresp="#_2.2.303.05">
                         <l xml:id="_2.2.303.L01">Force Centres of</l>
                         <l xml:id="_2.2.303.L02">the Fire Serpen-</l>
@@ -14915,7 +14951,7 @@ sometext</div>
                         <l xml:id="_2.2.303.L14">Real Future.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.303.R.1" corresp="#_2.2.303.01">
                         <l xml:id="_2.2.303.R01">ACCORDING</l>
                         <l xml:id="_2.2.303.R02">TO COCKER.</l>
@@ -14932,8 +14968,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="304">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="304">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.304.01">wan's won! Rip!<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
                         </hi> And his countinghands</l>
@@ -14979,7 +15015,7 @@ sometext</div>
                      <l xml:id="_2.2.304.30">crumbed from your table um, singing glory</l>
                      <l xml:id="_2.2.304.31">allaloserem, cog it out, here goes a sum. So</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.304.F01">     <hi rendition="#sup">1</hi> A byebye bingbang boys! See you Nutcracker Sunday!</l>
                      <l xml:id="_2.2.304.F02">     <hi rendition="#sup">2</hi> Chinchin Childaman! Chapchopchap!</l>
                      <l xml:id="_2.2.304.F03">     <hi rendition="#sup">3</hi> Wipe your glosses with what you know.</l>
@@ -14987,7 +15023,7 @@ sometext</div>
                      <l xml:id="_2.2.304.F05">tureens.</l>
                      <l xml:id="_2.2.304.F06">     <hi rendition="#sup">5</hi> Alls Sings and Alls Howls.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.304.L.1" corresp="#_2.2.304.05">
                         <l xml:id="_2.2.304.L01">Service super-</l>
                         <lb break="no"/>
@@ -15005,7 +15041,7 @@ sometext</div>
                         <l xml:id="_2.2.304.L08">of reciprocities.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.304.R.1" corresp="#_2.2.304.03">
                         <l xml:id="_2.2.304.R01">WITH EBONISER.</l>
                      </ab>
@@ -15023,8 +15059,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="305">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="305">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.305.01">read we in must book. It tells. He prophets</l>
                      <l xml:id="_2.2.305.02">most who bilks the best.</l>
                      <l xml:id="_2.2.305.03">     And that salubrated sickenagiaour of yaours</l>
@@ -15042,7 +15078,7 @@ sometext</div>
                      <l xml:id="_2.2.305.14">you were republicly royally toobally prussic</l>
                      <l xml:id="_2.2.305.15">blue in the shirt after.<hi rendition="#sup">
                            <hi rendition="#small">1</hi>
-                        </hi> 
+                        </hi>
                         <hi rendition="#i">Trionfante di bestia!</hi> And</l>
                      <l xml:id="_2.2.305.16">if you're not your bloater's kipper may I never</l>
                      <l xml:id="_2.2.305.17">curse again on that pint I took of Jamesons.</l>
@@ -15069,12 +15105,12 @@ sometext</div>
                         </hi> will mark tomorrow when we are</l>
                      <l xml:id="_2.2.305.33">making pilscrummage to whaboggeryin with</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.305.F01">     <hi rendition="#sup">1</hi> From three shellings. A bluedye sacrifice.</l>
                      <l xml:id="_2.2.305.F02">     <hi rendition="#sup">2</hi> Not Kilty. But the manajar was. He! He! Ho! Ho! Ho!</l>
                      <l xml:id="_2.2.305.F03">     <hi rendition="#sup">3</hi> Giglamps, Soapy Geyser, The Smell and Gory Mac Gusty.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.305.L.1" corresp="#_2.2.305.12">
                         <l xml:id="_2.2.305.L01">The Twofold</l>
                         <l xml:id="_2.2.305.L02">Truth and the</l>
@@ -15088,7 +15124,7 @@ sometext</div>
                         <l xml:id="_2.2.305.L06">Trishagion.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.305.R.1" corresp="#_2.2.305.03">
                         <l xml:id="_2.2.305.R01">COME SI</l>
                         <l xml:id="_2.2.305.R02">COMPITA</l>
@@ -15119,8 +15155,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="306">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="306">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.306.01">staff, scarf and blessed wallet and our aureoles</l>
                      <l xml:id="_2.2.306.02">round our neckkandcropfs where as and when</l>
                      <l xml:id="_2.2.306.03">Heavysciusgardaddy, parent who offers sweet-</l>
@@ -15171,7 +15207,7 @@ sometext</div>
                      <l xml:id="_2.2.306.29">you Approve of our Existing Parliamentary</l>
                      <l xml:id="_2.2.306.30">System? The Uses and Abuses of Insects, A</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.306.F01">     <hi rendition="#sup">1</hi> The divvy wants that babbling brook. Dear Auntie Emma Emma Eates.</l>
                      <l xml:id="_2.2.306.F02">     <hi rendition="#sup">2</hi> Strike the day off, the nightcap's on nigh. Goney, goney gone!</l>
                      <l xml:id="_2.2.306.F03">     <hi rendition="#sup">3</hi> R. C., disengaged, good character, would help, no salary.</l>
@@ -15180,7 +15216,7 @@ sometext</div>
                      <l xml:id="_2.2.306.F06">     <hi rendition="#sup">6</hi> Able seaman's caution.</l>
                      <l xml:id="_2.2.306.F07">     <hi rendition="#sup">7</hi> Rarely equal and distinct in all things.</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.306.L.1" corresp="#_2.2.306.05">
                         <l xml:id="_2.2.306.L01">Abnegation is</l>
                         <l xml:id="_2.2.306.L02">Adaptation.</l>
@@ -15228,7 +15264,7 @@ sometext</div>
                         <l xml:id="_2.2.306.L16">Lucretius.</l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.306.R.1" corresp="#_2.2.306.08">
                         <l xml:id="_2.2.306.R01">ENTER THE</l>
                         <l xml:id="_2.2.306.R02">COP AND</l>
@@ -15240,8 +15276,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="307">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="307">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.307.01">Visit to Guinness' Brewery, Clubs, Advan-</l>
                      <lb break="no"/>
                      <l xml:id="_2.2.307.02">tages of the Penny Post, When is a Pun not a</l>
@@ -15290,7 +15326,7 @@ sometext</div>
                            <hi rendition="#small">9</hi>
                         </hi> If You Do It Do It Now.</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.307.F01">     <hi rendition="#sup">1</hi> Jests and the Beastalk with a little rude hiding rod.</l>
                      <l xml:id="_2.2.307.F02">     <hi rendition="#sup">2</hi> Wherry like the whaled prophet in a spookeerie.</l>
                      <l xml:id="_2.2.307.F03">     <hi rendition="#sup">3</hi> What sins is pim money sans Paris?</l>
@@ -15303,7 +15339,7 @@ sometext</div>
                      <l xml:id="_2.2.307.F10">     <hi rendition="#sup">8</hi> Eh, Monsieur? Où, Monsieur? Eu, Monsieur? Nenni No, Monsieur!</l>
                      <l xml:id="_2.2.307.F11">     <hi rendition="#sup">9</hi> Ere we hit the hay, brothers, let's have that response to prayer!</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.307.L.1" corresp="#_2.2.307.01">
                         <l xml:id="_2.2.307.L01">Noah. Plato.</l>
                      </ab>
@@ -15389,8 +15425,8 @@ sometext</div>
                      </ab>
                   </div>
                </div>
-               <div type="page" subtype="C10" n="308">
-                  <div type="C10-C">
+               <div type="page" subtype="C10" rendition="PageC10" n="308">
+                  <div type="C10-C" rendition="PageC10CentreColumn">
                      <l xml:id="_2.2.308.01">Delays are Dangerous. Vitavite! Gobble</l>
                      <l xml:id="_2.2.308.02">Anne: tea's set, see's eneugh! Mox soonly</l>
                      <l xml:id="_2.2.308.03">will be in a split second per the chancellory</l>
@@ -15424,12 +15460,12 @@ sometext</div>
                      <l xml:id="_2.2.308.24">             jake, jack and little sousoucie</l>
                      <l xml:id="_2.2.308.25">                   (the babes that mean too)</l>
                   </div>
-                  <div type="C10-F" rendition="#c10-F-style">
+                  <div type="C10-F" rendition="PageC10Footnotes">
                      <l xml:id="_2.2.308.F01">     <hi rendition="#sup">1</hi> Kish is for anticheirst, and the free of my hand to him!</l>
                      <l xml:id="_2.2.308.F02">     <hi rendition="#sup">2</hi> And gags for skool and crossbuns and whopes he'll enjoyimsolff over</l>
                      <l xml:id="_2.2.308.F03">our drawings on the line!</l>
                   </div>
-                  <div type="C10-L" rendition="#c10-L-style">
+                  <div type="C10-L" rendition="PageC10LeftColumn">
                      <ab xml:id="_2.2.308.L.1" corresp="#_2.2.308.01">
                         <l xml:id="_2.2.308.L01">Xenophon.</l>
                      </ab>
@@ -15491,7 +15527,7 @@ sometext</div>
                         </l>
                      </ab>
                   </div>
-                  <div type="C10-R" rendition="#c10-R-style">
+                  <div type="C10-R" rendition="PageC10RightColumn">
                      <ab xml:id="_2.2.308.R.1" corresp="#_2.2.308.05">
                         <l xml:id="_2.2.308.R01">MAWMAW,</l>
                         <l xml:id="_2.2.308.R02">LUK, YOUR</l>
