@@ -1,92 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI>
    <teiHeader>
-      <fileDesc>
-
-    </fileDesc>
+      <fileDesc/>
       <encodingDesc>
-        <charDecl>
+         <charDecl>
             <glyph xml:id="ALP">
-                <mapping type="font" rendition="#fweet-fwigla">A</mapping>
-                <!-- TODO: image alternatives -->
-                <!-- <mapping type="image"><graphic url="/images/fwb/ALPt.gif" alt="*A*" height="10" width="11" /></mapping> -->
+               <mapping type="font" rendition="#fweet-fwigla">A</mapping>
+               <!-- TODO: image alternatives -->
+               <!-- <mapping type="image"><graphic url="/images/fwb/ALPt.gif" alt="*A*" height="10" width="11" /></mapping> -->
             </glyph>
             <glyph xml:id="BOX">
-                <mapping type="font" rendition="#fweet-fwigla">F</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">F</mapping>
             </glyph>
             <glyph xml:id="FOUR">
-                <mapping type="font" rendition="#fweet-fwigla">X</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">X</mapping>
             </glyph>
             <glyph xml:id="HCE">
-                <mapping type="font" rendition="#fweet-fwigla">E</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">E</mapping>
             </glyph>
             <glyph xml:id="ISSY">
-                <mapping type="font" rendition="#fweet-fwigla">I</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">I</mapping>
             </glyph>
             <glyph xml:id="SHAUN">
-                <mapping type="font" rendition="#fweet-fwigla">V</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">V</mapping>
             </glyph>
             <glyph xml:id="SHEM">
-                <mapping type="font" rendition="#fweet-fwigla">C</mapping>
+               <mapping type="font" rendition="#fweet-fwigla">C</mapping>
             </glyph>
-        </charDecl>
+         </charDecl>
       </encodingDesc>
       <tagsDecl>
-        <rendition xml:id="fweet-figla">
-            @font-face {
-            font-family: "Fweet Figla";
-            src: local("Fweet Figla"), url("FweetFig.ttf");
-            }
-        </rendition>
-        <rendition xml:id="i">font-style: italic</rendition>
-	<rendition xml:id="b">font-weight: bold</rendition>
-	<rendition xml:id="big">font-size: 1.2em</rendition>
-	<rendition xml:id="small">font-size: 0.8em</rendition>
-	<rendition xml:id="sub">vertical-align: sub</rendition>
-	<rendition xml:id="sup">vertical-align: super</rendition>
-	<rendition xml:id="rotated90">transform: rotate(90deg);</rendition>
-	<rendition xml:id="rotated180">transform: rotate(180deg);</rendition>
-	<rendition xml:id="rotatedNeg90">transform: rotate(-90deg);</rendition>
-	<rendition xml:id="reflected">transform: scale(-1, 1);</rendition>
-
-	<rendition xml:id="PageC10">
-	  .PageC10 {
-	  display: grid;
-	  grid-template-columns: 7em 22.5em 7em;
-	  grid-template-rows: 0.8fr 0.2fr;
-	  grid-template-areas:
-	  "l c r"
-	  "f f f"
-	  }
-	</rendition>
-	<rendition xml:id="PageC10CentreColumn">
-	  .PageC10CentreColumn {
-	  grid-area: c;
-	  }
-	</rendition>
-	<rendition xml:id="PageC10Footnotes">
-	  .PageC10Footnotes {
-	  grid-area: f;
-	  font-size: 0.9em;
-	  margin-top: 1em;
-	  margin-left: 3em;
-	  margin-right: 3em;
-	  }
-	</rendition>
-        <rendition xml:id="PageC10LeftColumn">
-	  .PageC10LeftColumn {
-	  grid-area: l;
-	  font-style: italic;
-	  font-size: 0.9em;
-	  }
-	</rendition>
-        <rendition xml:id="PageC10RightColumn">
-	  .PageC10RightColumn {
-	  grid-area: r;
-	  font-variant: small-caps;
-	  font-size: 0.9em;
-	  }
-	</rendition>
+         <rendition xml:id="fweet-figla">@font-face {
+          font-family: "Fweet Figla";
+          src: local("Fweet Figla"), url("FweetFig.ttf");
+          }</rendition>
+         <rendition xml:id="i">font-style: italic</rendition>
+         <rendition xml:id="b">font-weight: bold</rendition>
+         <rendition xml:id="big">font-size: 1.2em</rendition>
+         <rendition xml:id="small">font-size: 0.8em</rendition>
+         <rendition xml:id="sub">vertical-align: sub</rendition>
+         <rendition xml:id="sup">vertical-align: super</rendition>
+         <rendition xml:id="rotated90">transform: rotate(90deg);</rendition>
+         <rendition xml:id="rotated180">transform: rotate(180deg);</rendition>
+         <rendition xml:id="rotatedNeg90">transform: rotate(-90deg);</rendition>
+         <rendition xml:id="reflected">transform: scale(-1, 1);</rendition>
+         <rendition xml:id="PageC10">.PageC10 {
+          display: grid;
+          grid-template-columns: 7em 22.5em 7em;
+          grid-template-rows: 0.8fr 0.2fr;
+          grid-template-areas:
+          "l c r"
+          "f f f"
+          }</rendition>
+         <rendition xml:id="PageC10CentreColumn">.PageC10CentreColumn {
+          grid-area: c;
+          }</rendition>
+         <rendition xml:id="PageC10Footnotes">.PageC10Footnotes {
+          grid-area: f;
+          font-size: 0.9em;
+          margin-top: 1em;
+          margin-left: 3em;
+          margin-right: 3em;
+          }</rendition>
+         <rendition xml:id="PageC10LeftColumn">.PageC10LeftColumn {
+          grid-area: l;
+          font-style: italic;
+          font-size: 0.9em;
+          }</rendition>
+         <rendition xml:id="PageC10RightColumn">.PageC10RightColumn {
+          grid-area: r;
+          font-variant: small-caps;
+          font-size: 0.9em;
+          }</rendition>
       </tagsDecl>
    </teiHeader>
    <text>
@@ -15155,7 +15140,6 @@ sometext</div>
                   </div>
                </div>
             </div>
-
             <div type="chapter" n="3">
                <div type="page" n="309">
                   <l xml:id="L2.3.309.01">     It may not or maybe a no concern of the Guinnesses but.</l>
